@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { app } from "./firebase";
-import {initializeAuth, GoogleAuthProvider, signInWithPopup, browserLocalPersistence, signOut, getAuth, browserPopupRedirectResolver, onAuthStateChanged} from "firebase/auth";
+import {initializeAuth, GoogleAuthProvider, signInWithPopup, browserLocalPersistence, setPersistence, signOut, getAuth, browserPopupRedirectResolver, onAuthStateChanged} from "firebase/auth";
 
 const auth = initializeAuth(app,{
 persistence: [browserLocalPersistence],
@@ -8,6 +8,7 @@ popupRedirectResolver: browserPopupRedirectResolver
 });
 
 // const auth = getAuth(app);
+//setPersistence(auth, browserLocalPersistence);
 const provider = new GoogleAuthProvider();
 
 import "./App.css";
