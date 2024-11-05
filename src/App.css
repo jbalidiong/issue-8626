@@ -1,0 +1,28 @@
+.container{
+  height: 100vh;
+  width: 100vw;
+  align-content: center;
+  display: flex;
+  .btn{
+      width: 15rem;
+      margin: auto;
+      cursor: pointer;
+  }
+  .user{
+      padding: 5rem;
+      border: 2px solid white;
+      border-radius: 5px;
+      box-shadow: 0 0 1rem white;
+      width: 50%;
+      margin: auto;
+      align-content: center;
+      img{
+          box-shadow: 0 0 .5rem rgb(0, 255, 255);
+      }
+  }
+  .logout{
+      box-shadow: 0 0 .3rem rgb(184, 104, 104);
+      margin-left: 10rem;
+      background-color: rgb(212, 22, 22);
+  }
+}
